@@ -13,8 +13,7 @@ my $url = "http://www.dailyfx.com/sentiment-report";
 use LWP::Simple;
 use File::Copy;
 
-system("cd /home/alex/esforexco.github.io/backend");
-system("git pull");
+chdir("/home/alex/esforexco.github.io/backend");
 
 my $content = `curl --silent -L $url`;
 
