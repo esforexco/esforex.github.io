@@ -27,4 +27,4 @@ my $image_name = substr($image, rindex($image,"/")+1);
 system("curl --silent -L $image > ../images/ig_sentiment/".$image_name);
 copy("../images/ig_sentiment/".$image_name,"../images/ig_sentiment/last.png");
 
-system("cd .. && git add --all && git commit -m 'ig sentiment' && git push -u origin master");
+system("cd .. && git pull && git add --all && git commit -m 'ig sentiment' && git push -u origin master");
