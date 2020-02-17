@@ -1,24 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="forex,sentiment,options,strike,stock,economic,calendar,dukascopy,saxo bank,central bank rates"/>
-<meta name="Description" content="An important information for forex traders"/>
-<meta name="Author" content="ay"/>
-<link rel="icon" 
-      type="image/jpg" 
-      href="img/app.jpg">
-<title>EUR/USD FOREX</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords"
+          content="forex,sentiment,options,strike,stock,economic,calendar,dukascopy,saxo bank,central bank rates"/>
+    <meta name="Description" content="An important information for forex traders"/>
+    <meta name="Author" content="ay"/>
+    <link rel="icon"
+          type="image/jpg"
+          href="img/app.jpg">
+    <title>EUR/USD FOREX</title>
 
-<meta name="google-site-verification" content="M4glArBJfgRSwU9K5GTnC1mJB-vvnVMeVa4iO9sjuds" />
+    <meta name="google-site-verification" content="M4glArBJfgRSwU9K5GTnC1mJB-vvnVMeVa4iO9sjuds"/>
 
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-<script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,8 +27,13 @@
   ga('create', 'UA-84230829-1', 'auto');
   ga('send', 'pageview');
 
-</script>
-<style type="text/css">
+
+    document.addEventListener("DOMContentLoaded", (function(){
+        document.getElementById("ig_sentiment").src = "images/ig_sentiment/last.png?"+new Date().getTime();
+    }));
+
+    </script>
+    <style type="text/css">
 	a {
 		text-decoration: none;
 		font-weight: bold
@@ -37,17 +42,23 @@
 	a#hover {
 		text-decoration: underline
 	}
-</style>
+
+    </style>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
 </head>
 <body style="margin-top:5pt">
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-<h3>FX MARKET HOURS</h3>
-<script type="text/javascript">DukascopyApplet = {"type":"fxmarkethours","params":{"showHeader":false,"displayMainMenu":true,"displayTimezoneChange":true,"displayInstrumentChange":true,"displaySpreadIndicator":true,"displayVolumeIndicator":true,"displayVolatilityIndicator":true,"displayFollowButton":true,"allowTimezoneChange":true,"allowInstrumentChange":true,"defaultTimezone":0,"showIndicator":"0","defaultFollowMode":false,"worldMapColor":"red","hoursBackground":"#444f5f","hoursActiveBackground":"#7d92b0","hoursTextColor":"#ffffff","currentHourBGColor":"#f9fdff","dstHourColor":"#0cf6ff","indicatorBarColor":"#5090c6","graphPointsColor":"#ffffff","spreadTopGraphColor":"#208c1c","spreadBottomGraphColor":"#dc0e0e","volatilityGraphColor":"#146fba","availableInstruments":"AUD/USD,EUR/USD,GBP/USD,NZD/USD,USD/CAD,USD/CHF,USD/JPY,USD/NOK,USD/SEK,USD/SGD,XAG/USD,XAU/USD,AUD/CAD,AUD/CHF,AUD/JPY,AUD/NZD,CAD/CHF,CAD/JPY,CHF/JPY,EUR/AUD,EUR/CAD,EUR/CHF,EUR/DKK,EUR/GBP,EUR/HKD,EUR/JPY,EUR/NOK,EUR/NZD,EUR/SEK,GBP/AUD,GBP/CAD,GBP/CHF,GBP/JPY,GBP/NZD,NZD/CAD,NZD/CHF,NZD/JPY,AUD/SGD,CAD/HKD,CHF/SGD,EUR/PLN,EUR/SGD,EUR/TRY,HKD/JPY,SGD/JPY,USD/DKK,USD/HKD,USD/MXN,USD/PLN,USD/RUB,USD/TRY,USD/ZAR","instrument":"EUR/USD","width":"100%","height":"700","adv":"popup"}};</script>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>FX MARKET HOURS</h3>
+            <script type="text/javascript">
+                DukascopyApplet = {"type":"fxmarkethours","params":{"showHeader":false,"displayMainMenu":true,"displayTimezoneChange":true,"displayInstrumentChange":true,"displaySpreadIndicator":true,"displayVolumeIndicator":true,"displayVolatilityIndicator":true,"displayFollowButton":true,"allowTimezoneChange":true,"allowInstrumentChange":true,"defaultTimezone":0,"showIndicator":"0","defaultFollowMode":false,"worldMapColor":"red","hoursBackground":"#444f5f","hoursActiveBackground":"#7d92b0","hoursTextColor":"#ffffff","currentHourBGColor":"#f9fdff","dstHourColor":"#0cf6ff","indicatorBarColor":"#5090c6","graphPointsColor":"#ffffff","spreadTopGraphColor":"#208c1c","spreadBottomGraphColor":"#dc0e0e","volatilityGraphColor":"#146fba","availableInstruments":"AUD/USD,EUR/USD,GBP/USD,NZD/USD,USD/CAD,USD/CHF,USD/JPY,USD/NOK,USD/SEK,USD/SGD,XAG/USD,XAU/USD,AUD/CAD,AUD/CHF,AUD/JPY,AUD/NZD,CAD/CHF,CAD/JPY,CHF/JPY,EUR/AUD,EUR/CAD,EUR/CHF,EUR/DKK,EUR/GBP,EUR/HKD,EUR/JPY,EUR/NOK,EUR/NZD,EUR/SEK,GBP/AUD,GBP/CAD,GBP/CHF,GBP/JPY,GBP/NZD,NZD/CAD,NZD/CHF,NZD/JPY,AUD/SGD,CAD/HKD,CHF/SGD,EUR/PLN,EUR/SGD,EUR/TRY,HKD/JPY,SGD/JPY,USD/DKK,USD/HKD,USD/MXN,USD/PLN,USD/RUB,USD/TRY,USD/ZAR","instrument":"EUR/USD","width":"100%","height":"700","adv":"popup"}};
+            </script>
 
-<script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
- <script type="text/javascript">
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+            <script type="text/javascript">
 	DukascopyApplet = {
 		"type":"realtime_sentiment_index",
 		"params":{
@@ -63,83 +74,103 @@
 			"width":"100%",
 			"height":"800",
 			"adv":"off"}};
-</script>
 
-<script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
-<p><h3>FX OPTIONS SENTIMENT SAXO BANK</h3>&nbsp;<!--<a target=_blank href="https://www.tradingfloor.com/tools/fx-options-retail-positioning">https://www.tradingfloor.com/tools/fx-options-retail-positioning</a>-->
-<iframe width="100%" height="485" style="pointer-events:none;" src="https://fxowebtools.saxobank.com/retail.html" frameborder="0" scrolling="no"></iframe>
-<!--
-<h3>FX SENTIMENT SAXO BANK</h3>&nbsp;<a href="https://www.tradingfloor.com/tools/fx-open-positions" target=_blank>https://www.tradingfloor.com/tools/fx-open-positions</a>
-<iframe src="//fxlabs.iitech.dk/Widgets/FullView.aspx?instanceId=4480&amp;instrument=EURUSD&amp;resolution=60&amp" style="text-align:left;width:899px; height:760px" frameborder="0" scrolling="no">	&lt;p&gt;		Your browser doesn't support IFrame.&lt;/p&gt;</iframe><p>
+            </script>
 
-<h3>FX OPEN ORDERS SAXO BANK</h3>&nbsp;<a href="https://www.tradingfloor.com/tools/fx-open-orders" target=_blank>https://www.tradingfloor.com/tools/fx-open-orders</a>
-<iframe src="//fxlabs.iitech.dk/Widgets/FullView.aspx?instanceId=9541&amp;instrument=EURUSD&amp;resolution=60&amp" style="text-align:left;width:899px; height:760px" frameborder="0" scrolling="no">	&lt;p&gt;		Your browser doesn't support IFrame.&lt;/p&gt;</iframe><p> -->
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+            <p>
+            <h3>FX OPTIONS SENTIMENT SAXO BANK</h3>&nbsp;
+            <!--<a target=_blank href="https://www.tradingfloor.com/tools/fx-options-retail-positioning">https://www.tradingfloor.com/tools/fx-options-retail-positioning</a>-->
+            <iframe width="100%" height="485" style="pointer-events:none;"
+                    src="https://fxowebtools.saxobank.com/retail.html" frameborder="0"
+                    scrolling="no"></iframe>
+            <!--
+            <h3>FX SENTIMENT SAXO BANK</h3>&nbsp;<a href="https://www.tradingfloor.com/tools/fx-open-positions" target=_blank>https://www.tradingfloor.com/tools/fx-open-positions</a>
+            <iframe src="//fxlabs.iitech.dk/Widgets/FullView.aspx?instanceId=4480&amp;instrument=EURUSD&amp;resolution=60&amp" style="text-align:left;width:899px; height:760px" frameborder="0" scrolling="no">	&lt;p&gt;		Your browser doesn't support IFrame.&lt;/p&gt;</iframe><p>
 
-<h3><a href="https://www.dukascopy.com/swiss/english/marketwatch/COT/" target=_blank>COT</a></h3>
-<script type="text/javascript">DukascopyApplet = {"type":"cot","params":{"showHeader":false,"primaryColor":"#e00","secondaryColor":"#000","defaultCurrency":"EUR","width":"100%","height":"500","adv":"popup"}};</script><script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
-<a href="http://www.cftc.gov/dea/futures/deacmxsf.htm" target=_blank>CFTC Commitments of Traders Report - CMX (Futures Only)</a><br/>
-<a href="http://www.cftc.gov/dea/futures/other_sf.htm" target=_blank>CFTC Commitments of Traders Long Report - Other (Combined)</a><br/>
-<a href="http://www.cftc.gov/dea/futures/deanybtsf.htm" target=_blank>CFTC Commitments of Traders Report - ICE (Futures Only)</a><br/>
+            <h3>FX OPEN ORDERS SAXO BANK</h3>&nbsp;<a href="https://www.tradingfloor.com/tools/fx-open-orders" target=_blank>https://www.tradingfloor.com/tools/fx-open-orders</a>
+            <iframe src="//fxlabs.iitech.dk/Widgets/FullView.aspx?instanceId=9541&amp;instrument=EURUSD&amp;resolution=60&amp" style="text-align:left;width:899px; height:760px" frameborder="0" scrolling="no">	&lt;p&gt;		Your browser doesn't support IFrame.&lt;/p&gt;</iframe><p> -->
 
-<h3>ECONOMIC CALENDAR</h3>
-<script type="text/javascript">DukascopyApplet = {"type":"economic_calendar_new","params":{"showHeader":false,"tableBorderColor":"#D92626","defaultTimezone":0,"defaultCountries":"c:AU,CA,CH,CN,EU,GB,JP,NZ,US,DE,FR,IT,ES","impacts":[0,1,2],"dateTab":2,"showColCountry":true,"showColCurrency":true,"showColImpact":true,"showColPrevious":true,"showColForecast":true,"width":"100%","height":"800","adv":"popup"}};</script><script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
-<h3>  </h3>
-<script type="text/javascript">DukascopyApplet = {"type":"interest_rate_calendar","params":{"showHeader":true,"tableBorderColor":"#D92626","delta":true,"changed":true,"nameType":2,"width":"100%","height":"830px","adv":"popup"}};</script><script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+            <h3><a href="https://www.dukascopy.com/swiss/english/marketwatch/COT/"
+                   target=_blank>COT</a></h3>
+            <script type="text/javascript">
+                DukascopyApplet = {"type":"cot","params":{"showHeader":false,"primaryColor":"#e00","secondaryColor":"#000","defaultCurrency":"EUR","width":"100%","height":"500","adv":"popup"}};
+            </script>
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+            <a href="http://www.cftc.gov/dea/futures/deacmxsf.htm" target=_blank>CFTC Commitments of
+                Traders Report - CMX (Futures Only)</a><br/>
+            <a href="http://www.cftc.gov/dea/futures/other_sf.htm" target=_blank>CFTC Commitments of
+                Traders Long Report - Other (Combined)</a><br/>
+            <a href="http://www.cftc.gov/dea/futures/deanybtsf.htm" target=_blank>CFTC Commitments
+                of Traders Report - ICE (Futures Only)</a><br/>
 
-<!--        <script type="text/javascript">DukascopyApplet = {
-    "type": "chart",
-    "params": {
-        "showUI": true,
-        "showTabs": true,
-        "showParameterToolbar": true,
-        "showOfferSide": true,
-        "allowInstrumentChange": true,
-        "allowPeriodChange": true,
-        "allowOfferSideChange": true,
-        "showAdditionalToolbar": true,
-        "showDetachButton": true,
-        "presentationType": "candle",
-        "axisX": true,
-        "axisY": true,
-        "legend": true,
-        "timeline": true,
-        "showDateSeparators": true,
-        "showZoom": true,
-        "showScrollButtons": true,
-        "showAutoShiftButton": true,
-        "crosshair": true,
-        "borders": false,
-        "theme": "Pastelle",
-        "uiColor": "#000",
-        "availableInstruments": "l:",
-        "instrument": "EUR/USD",
-        "period": "16",
-        "offerSide": "BID",
-        "timezone": 0,
-        "live": true,
-        "panLock": false,
-        "width": "100%",
-        "height": "600",
-        "adv": "popup"
-    }
-};</script>
-<script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>-->
+            <img src="images/loading.gif" width="100%" id="ig_sentiment"/>
+
+            <h3>ECONOMIC CALENDAR</h3>
+            <script type="text/javascript">
+                DukascopyApplet = {"type":"economic_calendar_new","params":{"showHeader":false,"tableBorderColor":"#D92626","defaultTimezone":0,"defaultCountries":"c:AU,CA,CH,CN,EU,GB,JP,NZ,US,DE,FR,IT,ES","impacts":[0,1,2],"dateTab":2,"showColCountry":true,"showColCurrency":true,"showColImpact":true,"showColPrevious":true,"showColForecast":true,"width":"100%","height":"800","adv":"popup"}};
+            </script>
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+            <h3></h3>
+            <script type="text/javascript">
+                DukascopyApplet = {"type":"interest_rate_calendar","params":{"showHeader":true,"tableBorderColor":"#D92626","delta":true,"changed":true,"nameType":2,"width":"100%","height":"830px","adv":"popup"}};
+            </script>
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+
+            <!--        <script type="text/javascript">DukascopyApplet = {
+                "type": "chart",
+                "params": {
+                    "showUI": true,
+                    "showTabs": true,
+                    "showParameterToolbar": true,
+                    "showOfferSide": true,
+                    "allowInstrumentChange": true,
+                    "allowPeriodChange": true,
+                    "allowOfferSideChange": true,
+                    "showAdditionalToolbar": true,
+                    "showDetachButton": true,
+                    "presentationType": "candle",
+                    "axisX": true,
+                    "axisY": true,
+                    "legend": true,
+                    "timeline": true,
+                    "showDateSeparators": true,
+                    "showZoom": true,
+                    "showScrollButtons": true,
+                    "showAutoShiftButton": true,
+                    "crosshair": true,
+                    "borders": false,
+                    "theme": "Pastelle",
+                    "uiColor": "#000",
+                    "availableInstruments": "l:",
+                    "instrument": "EUR/USD",
+                    "period": "16",
+                    "offerSide": "BID",
+                    "timezone": 0,
+                    "live": true,
+                    "panLock": false,
+                    "width": "100%",
+                    "height": "600",
+                    "adv": "popup"
+                }
+            };</script>
+            <script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>-->
 
 
+        </div>
     </div>
-  </div>
 </div>
 <footer class="text-center">
-  <div class="container">
-    <div class="row">
-	  <div>2020, <a href="mailto:admin@esforex.com">admin@esforex.com</a></div>
-	  <br/>
+    <div class="container">
+        <div class="row">
+            <div>2020, <a href="mailto:admin@esforex.com">admin@esforex.com</a></div>
+            <br/>
+        </div>
     </div>
-  </div>
 </footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.2.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="js/jquery-1.11.2.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
 </body>
 </html>
