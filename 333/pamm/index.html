@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords"
+    content="ay,333,market,DXY,forex,dollar,eur/usd,gbp/usd/,usd/jpy,usd/chf,usd/cad,aud/usd,Automatic,trade,system,ATS,robot"/>
+<meta name="Description" content="Automated trading system for dollar index"/>
+<meta name="Author" content="ay"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title></title>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-84230829-1', 'auto');
+    ga('send', 'pageview');
+  
+  
+      
+  
+      </script>
+
+<meta name="generator" content="dirty hands" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+  html, body {
+    height: 100%;
+    font-size: 32px;
+    font-family: "Merriweather"
+  }
+  .parent {
+      width: 100%;
+      height: 100%;
+      display: table;
+      text-align: center;
+  }
+  .parent > .greeting {
+      display: table-cell;
+      vertical-align: middle;
+  }
+  .parent > .cv {
+      display: table-cell;
+      vertical-align: bottom;
+  }
+  @keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  #cursor { 
+    animation: blink 0.7s infinite;
+    margin: -2.5px;
+  }
+  #email { 
+    color: white;
+    background-color: black;
+  }
+  #label {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;   
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #trading {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;   
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #welcome {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;   
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+ 
+  a, a:hover {
+    color: black;
+  }
+  #cv { 
+    color: #d8d8d8
+  }
+  #cv:hover { 
+    color: black;
+  }
+</style>
+<script language="javascript">
+  const email = "manager@esforex.com";
+
+  // typing the label
+  var label;
+  const text = "Did you need these results? Let's discuss "+email;
+  var cursorPos = 0;
+
+  function typeLabel() {
+    cursorPos = 0;
+    label = document.getElementById("label");
+    typeNextSymbol();
+  }
+
+  function typeNextSymbol() {
+    if(cursorPos > text.length) { selectEmail(); return; }
+    label.innerHTML = text.substr(0,cursorPos) + "<span id=\"cursor\">|</span>";
+    document.title = text.substr(0,cursorPos);
+    cursorPos++;
+    setTimeout(typeNextSymbol, 30);
+  }
+
+  var emailPos;
+
+  function selectEmail() {
+    emailPos = cursorPos = text.length - email.length;
+    setTimeout(selectNextSymbol, 1000);
+  }
+  function selectNextSymbol() {
+    if(cursorPos > text.length) return;
+    label.innerHTML = text.substr(0, emailPos) + "<a href=\"mailto:alex@justprodev.com\" id=\"email\">"+text.substr(emailPos, email.length-(text.length-cursorPos))+"<span id=\"cursor\">|</span></a>" + text.substr(cursorPos, text.length);
+    cursorPos++;
+    setTimeout(selectNextSymbol, 30);
+  }
+  // }
+  window.addEventListener("load", typeLabel, false);
+  window.addEventListener("orientationchange", function(){document.location.reload()}, false);
+</script>
+
+</head>
+
+<body>
+  <section class="parent">
+    <div class="greeting"><p id="label"></p></div>
+    <div id="trading">
+                <p style="margin: 15px;">Low&nbsp;risk:&nbsp;<a href="USD_INDEX/reinvest_lot/USD 100k_00_00 01_02_2009_00_00 04_04_2020/report.html" target="_blank">report</a>,&nbsp;<a href="USD_INDEX/reinvest_lot/USD 100k_00_00 01_02_2009_00_00 04_04_2020/test/statistic.csv" target="_blank">excel</a></p>
+                <p style="margin: 15px;">Medium&nbsp;risk:&nbsp;<a href="USD_INDEX/reinvest_lot/USD%20100k%20aggressive%20mm_00_00%2001_02_2009_00_00%2004_04_2020/report.html" target="_blank">report</a>&nbsp;<a href="USD_INDEX/reinvest_lot/USD%20100k%20aggressive%20mm_00_00%2001_02_2009_00_00%2004_04_2020/test/statistic.csv" target="_blank">excel</a></p>
+                <p style="margin: 15px;">High&nbsp;risk:&nbsp;Coming soon ...</p>
+    </div>
+    <div id="welcome">Robot that operates with portfolio across FX USD pairs</div>    
+  </section>
+  
+</body>    
+</html>
